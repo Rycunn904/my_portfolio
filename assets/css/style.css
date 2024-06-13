@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: wheat;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(165, 142, 101);
+    padding: 1.20%;
+}
+
+h1 {
+    display: inline-block;
+    text-align: left;
+    font-family: monospace;
+    font-size: 250%;
+    margin-left: 1%;
+}
+
+nav {
+    margin-left: auto;
+    margin-top: auto;
+} 
+
+nav ul {
+    font-size: 200%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 0.5;
+}
+
+a {
+    color: rgb(23, 75, 189);
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+h2 {
+    background-color: rgb(165, 142, 101);
+    size: 100px;
+    padding: 10px;
+}
+
+P {
+    padding: 10px;
+    padding-left: 20;
+    font-size: 103%;
+}
+
+.card {
+    
+}
