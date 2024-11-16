@@ -141,3 +141,13 @@ P {
     border-style: solid;
     border-width: 8px;
 }
+
+.jsSVG {
+    height: 50px;
+    width: 50px;
+}
+
+.htmlSVG {
+    height: 50px;
+    width: 50px;
+}
