@@ -110,6 +110,14 @@ P {
     background-image: url(../images/code.jpg);
 }
 
+.imgLua {
+    background-image: url(../images/lua.png);
+}
+
+.imgPsWrd {
+    background-image: url(../images/pswrd.png);
+}
+
 .textbox {
     background-color: lightblue;
     opacity: 70%;
@@ -148,6 +156,11 @@ P {
 }
 
 .htmlSVG {
+    height: 50px;
+    width: 50px;
+}
+
+.luaSVG {
     height: 50px;
     width: 50px;
 }
