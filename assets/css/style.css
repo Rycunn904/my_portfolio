@@ -209,26 +209,8 @@ img, .card, .hero {
     border-width: 8px;
 }
 
-.jsSVG {
+.SVG {
     height: 50px;
     width: 50px;
-    filter: brightness(0);
-}
-
-.htmlSVG {
-    height: 50px;
-    width: 50px;
-    filter: brightness(0);
-}
-
-.luaSVG {
-    height: 50px;
-    width: 50px;
-    filter: brightness(0);
-}
-
-.cssSVG {
-    height: 50px;
-    width: 50px;
-    filter: brightness(0);
+    /* filter: brightness(0); */
 }
