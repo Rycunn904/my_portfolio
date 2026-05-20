@@ -70,10 +70,9 @@ li {
 }
 
 #return {
-    display: fixed;
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    /* top left of resume div*/
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 #return a {
@@ -93,10 +92,8 @@ li {
 }
 
 #download {
-    display: fixed;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    /* top right of resume div*/
+    float: right;
 }
 
 #download a {
