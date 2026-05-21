@@ -161,6 +161,10 @@ P {
     background-image: url(../images/kanban.png);
 }
 
+.imgHTTT {
+    background-image: url(../images/httt.png);
+}
+
 img, .card, .hero {
     max-width: 100%;
 }
