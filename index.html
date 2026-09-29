@@ -5,151 +5,287 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan's Portfolio</title>
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="red">Ryan's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a id="aboutlink" href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="resume/">Resume</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="https://github.com/Rycunn904">GitHub</a></li>
-            </ul>
-        </nav>
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-symbol">&gt;_</span>Ryan<span class="accent">.dev</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="hero"></div>
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                Hello! My name is Ryan, and I am a passionate self-taught developer with
-                experience in web development, software engineering, and Roblox game
-                development. I work with HTML, CSS, JavaScript, Python, Lua, Java, and C#,
-                while currently learning C++ and React to expand my skill set further.
 
-                I enjoy building interactive websites, applications, bots, and custom
-                systems inside Roblox Studio. One of my favorite parts of programming is
-                solving problems and creating systems that are both functional and engaging
-                for users.
-
-                I have participated in multiple hackathons, including Virginia CyberSlam
-                2025 and 2026, where I collaborated with teams to solve technical and
-                cybersecurity-related challenges. I also worked on a private AI and
-                satellite imagery project that used image analysis and traffic data to help
-                predict road locations from aerial imagery.
-
-                Outside of coding, I continue improving my skills through personal projects,
-                experimenting with new technologies, and learning more about software and
-                game development every day.
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="terminal-label">
+                <span class="terminal-dot"></span> Available for projects & opportunities
+            </div>
+            <h1>Building interactive systems <span>& digital experiences.</span></h1>
+            <p class="hero-description">
+                Passionate self-taught developer specializing in web applications, software engineering, and Roblox game development.
             </p>
-        </section>
-        <section id="skills">
-            <h2>Technologies</h2>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="button primary">View Projects</a>
+                <a href="#contacts" class="button secondary">Get In Touch</a>
+            </div>
+            <div class="hero-tech">
+                <span>Python</span>
+                <span>Java</span>
+                <span>Lua</span>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>C#</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span> Scroll
+        </div>
+    </section>
 
-            <div class="skills-grid">
-                <ul>Python</ul>
-                <ul>Java</ul>
-                <ul>Lua</ul>
-                <ul>HTML</ul>
-                <ul>CSS</ul>
-                <ul>JavaScript</ul>
-                <ul>C#</ul>
-                <ul>C++ (Learning)</ul>
-                <ul>React (Learning)</ul>
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <div>
+                    <p class="section-label">GET TO KNOW ME</p>
+                    <h2>About Me</h2>
+                </div>
             </div>
-        </section>
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div data-iframe-width="150" data-iframe-height="270"
-                data-share-badge-id="5fc6f3e3-802c-4afe-8d80-ba829c3019bc"
-                data-share-badge-host="https://www.credly.com">
-            </div>
-            <section id="portfolio">
-                <h2>Portfolio</h2>
-                <a class="card imgLua" id="top" href="https://www.roblox.com/users/1444174909/profile#!#creations"
-                    target="_blank">
-                    <div class="textbox">
-                        <h3>Roblox Profile</h3>
-                        <p>Roblox Profile has games made from Lua, WIP or Not released games can be shown upon request
-                        </p>
-                        <img src="assets/images/code_svg/lua.svg" class="SVG" alt="Lua Logo">
+
+            <div class="about-grid">
+                <div class="about-main">
+                    <p class="lead">
+                        Hello! My name is Ryan, and I am a passionate self-taught developer with experience across web development, software engineering, and game development inside Roblox Studio.
+                    </p>
+                    <p>
+                        I work with a variety of languages including HTML, CSS, JavaScript, Python, Lua, Java, and C#, while actively expanding my skill set into C++ and React. One of my favorite parts of programming is solving complex problems and building systems that are both functional and engaging.
+                    </p>
+                    <p>
+                        I have participated in multiple hackathons, including Virginia CyberSlam 2025 and 2026, collaborating with teams to tackle technical and cybersecurity challenges. I've also worked on a private AI and satellite imagery project using image analysis and traffic data to predict road locations from aerial imagery.
+                    </p>
+                </div>
+
+                <div class="about-terminal">
+                    <div class="terminal-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                </a>
-                <div class="projects">
-                    <div class="row">
-                        <div class="col">
-                            <a class="card-link" href="https://rycunn904.github.io/password_generator/" target="_blank">
-                                <div class="card imgPsWrd" id="two">
-                                    <div class="textbox">
-                                        <h3>Password Generator</h3>
-                                        <p>Generates a randomized password of basic inputs</p>
-                                        <img src="assets/images/code_svg/javascript.svg" class="SVG"
-                                            alt="JavaScript Logo">
-                                        <img src="assets/images/code_svg/html5.svg" class="SVG" alt="HTML5 Logo">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="card-link" href="https://rycunn904.github.io/kanban/" target="_blank">
-                                <div class="card imgkanban" id="three">
-                                    <div class="textbox">
-                                        <h3>KanBan Style To-Do List</h3>
-                                        <p>
-                                            A simple KanBan style to-do list that allows users to add tasks and subtasks
-                                            with sub-subtasks. Tasks can be dragged and dropped to different columns to
-                                            help with organization.
-                                        </p>
-                                        <img src="assets/images/code_svg/javascript.svg" class="SVG"
-                                            alt="JavaScript Logo">
-                                        <img src="assets/images/code_svg/html5.svg" class="SVG" alt="HTML5 Logo">
-                                        <img src="assets/images/code_svg/css3.svg" class="SVG" alt="CSS3 Logo">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <a class="card-link" href="https://github.com/Rycunn904/hexagonal-tic-tac-toe" target="_blank">
-                                    <div class="card imgHTTT" id="two">
-                                        <div class="textbox">
-                                            <h3>Hexagonal Tic Tac Toe</h3>
-                                            <p>
-                                                A hexagonal version of the classic tic tac toe game. Players take turns
-                                                placing their pieces on the board, trying to get six in a row while
-                                                blocking their opponent's moves.
-                                            </p>
-                                            <img src="assets/images/code_svg/python.svg" class="SVG" alt="Python Logo">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <div class="card img" id="three">
-                                    <div class="textbox">
-                                        <a>Work In Progress</a>
-                                        <p>
-                                            Additional projects are currently being developed and will be added soon.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="terminal-body">
+                        <div><span class="green">&gt;</span> developer.<span class="string">location</span> = <span class="string">"Virginia, USA"</span>;</div>
+                        <div><span class="green">&gt;</span> developer.<span class="string">status</span> = <span class="string">"Learning C++ & React"</span>;</div>
+                        <div><span class="green">&gt;</span> developer.<span class="string">interests</span> = [</div>
+                        <div class="indent"><span class="string">"Web Development"</span>,</div>
+                        <div class="indent"><span class="string">"Roblox Game Systems"</span>,</div>
+                        <div class="indent"><span class="string">"AI & Image Analysis"</span>,</div>
+                        <div class="indent"><span class="string">"Cybersecurity"</span></div>
+                        <div>];</div>
+                        <div><span class="green">&gt;</span> developer.<span class="string">focus</span> = <span class="string">"Building functional & engaging software"</span>;</div>
                     </div>
                 </div>
-            </section>
-            <section id="contacts">
-                <h2>Contacts</h2>
+            </div>
+        </section>
+
+        <!-- SKILLS / TECHNOLOGIES SECTION -->
+        <section id="skills" class="section section-alt">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <div>
+                    <p class="section-label">MY STACK</p>
+                    <h2>Technologies</h2>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>Web Development</h3>
+                    <div class="skill-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">#!</div>
+                    <h3>Languages</h3>
+                    <div class="skill-list">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C#</span>
+                        <span>Lua</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">&#9881;</div>
+                    <h3>Game & AI Dev</h3>
+                    <div class="skill-list">
+                        <span>Roblox Studio</span>
+                        <span>Lua Scripting</span>
+                        <span>Image Analysis</span>
+                    </div>
+                </div>
+
+                <div class="skill-card learning-card">
+                    <div class="skill-icon">&infin;</div>
+                    <h3>Currently Learning</h3>
+                    <div class="skill-list">
+                        <span>C++</span>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <div>
+                    <p class="section-label">ACHIEVEMENTS</p>
+                    <h2>Certifications</h2>
+                </div>
+            </div>
+
+            <div class="certification-container">
+                <div data-iframe-width="150" data-iframe-height="270"
+                    data-share-badge-id="5fc6f3e3-802c-4afe-8d80-ba829c3019bc"
+                    data-share-badge-host="https://www.credly.com">
+                </div>
+                <div class="certification-text">
+                    <h3>Verified Badges & Credentials</h3>
+                    <p>Verified through Credly. Click the badge to inspect verification status and details.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO / PROJECTS SECTION -->
+        <section id="portfolio" class="section section-alt">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <div>
+                    <p class="section-label">SELECTED WORKS</p>
+                    <h2>Featured Projects</h2>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <!-- Roblox Profile Card (Featured Large Card) -->
+                <a href="https://www.roblox.com/users/1444174909/profile#!#creations" target="_blank" class="project-card project-large">
+                    <div class="project-image imgLua"></div>
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <div class="project-number">01 / FEATURED</div>
+                        <div class="project-tags">
+                            <span>Lua</span>
+                            <span>Roblox Studio</span>
+                            <span>Game Dev</span>
+                        </div>
+                        <h3>Roblox Profile & Games</h3>
+                        <p>A collection of games and custom game systems developed using Lua in Roblox Studio. Work-in-progress and unreleased systems available upon request.</p>
+                    </div>
+                </a>
+
+                <!-- Password Generator -->
+                <a href="https://rycunn904.github.io/password_generator/" target="_blank" class="project-card">
+                    <div class="project-image imgPsWrd"></div>
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <div class="project-number">02</div>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <h3>Password Generator</h3>
+                        <p>Generates secure randomized passwords based on customizable user parameters and inputs.</p>
+                    </div>
+                </a>
+
+                <!-- KanBan Board -->
+                <a href="https://rycunn904.github.io/kanban/" target="_blank" class="project-card">
+                    <div class="project-image imgKanban"></div>
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <div class="project-number">03</div>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <h3>KanBan Style To-Do List</h3>
+                        <p>A drag-and-drop task management tool supporting nested tasks, subtasks, and organizational columns.</p>
+                    </div>
+                </a>
+
+                <!-- Hexagonal Tic Tac Toe -->
+                <a href="https://github.com/Rycunn904/hexagonal-tic-tac-toe" target="_blank" class="project-card">
+                    <div class="project-image imgHTTT"></div>
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <div class="project-number">04</div>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Game Logic</span>
+                        </div>
+                        <h3>Hexagonal Tic-Tac-Toe</h3>
+                        <p>A strategic twist on traditional tic-tac-toe where players attempt to connect six pieces on a hexagonal grid board.</p>
+                    </div>
+                </a>
+
+                <!-- Work In Progress -->
+                <div class="project-card wip">
+                    <div class="wip-content">
+                        <span class="wip-icon">&plus;</span>
+                        <h3>Work In Progress</h3>
+                        <p>Additional projects are currently under development and will be added soon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contacts" class="section contact-section">
+            <div class="contact-box">
+                <p class="section-label">WHAT'S NEXT?</p>
+                <h2>Get In Touch</h2>
                 <p>
-                    You can contact me via email at: <a href="mailto:itshim.ex@gmail.com">itshim.ex@gmail.com</a>
+                    Whether you have a question, a potential collaboration, or just want to say hi, my inbox is open!
                 </p>
-            </section>
+                <a href="mailto:itshim.ex@gmail.com" class="button primary">Say Hello</a>
+                <div class="contact-links">
+                    <a href="https://github.com/Rycunn904" target="_blank">GitHub</a>
+                    <a href="mailto:itshim.ex@gmail.com">itshim.ex@gmail.com</a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div>Designed & Built by Ryan</div>
+            <div class="footer-code">&copy; 2026 Ryan's Portfolio</div>
+        </div>
+    </footer>
+
     <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
 
